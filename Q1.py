@@ -1,4 +1,5 @@
 #Encapsulation
+#Determine if School bus is also an instance of the Vehicle class.
 
 class Vehicle:
     def __init__(self, brand, model):

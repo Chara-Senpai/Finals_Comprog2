@@ -1,4 +1,6 @@
 #Inheritance
+#Build a class Employee with multiple constructors that 
+#can initialize an employee object in different ways.
 
 class Employee:
     def __init__(self, name: str, age: int):
@@ -22,15 +24,15 @@ class Employee1(Employee, Action):
     def __init__(self, name, age):
         super().__init__(name, age)
 
-    def speak(self):
+    def work1(self):
         print('Calculating sales.')
 
 class Employee2(Employee, Action):
-    def move(self):
+    def work2(self):
         print('Developing.')
 
 class Employee3(Employee, Action):
-    def eating(self):
+    def work3(self):
         print('Making an advertisement')
 
 # Creating objects and demonstrating inheritance
@@ -40,12 +42,12 @@ employee3 = Employee3('Rover', 40)
 
 print(f'{employee1.name}, {employee1.age}')
 employee1.movement()
-employee1.speak()
+employee1.work1()
 
 print(f'{employee2.name}, {employee2.age}')
 employee2.movement()
-employee2.move()
+employee2.work2()
 
 print(f'{employee3.name}, {employee3.age}')
 employee3.movement()
-employee3.eating()
+employee3.work3()

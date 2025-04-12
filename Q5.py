@@ -1,4 +1,6 @@
 #Encapsulation
+#Composition Over Inheritance: Create a Book class with
+#a Author class included within it, demonstrating composition over inheritance.
 
 class Author:
     def __init__(self, name):

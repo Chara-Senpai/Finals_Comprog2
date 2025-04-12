@@ -1,4 +1,6 @@
-#Polymorphism and Duck Typing 
+#Polymorphism and Duck Typing
+# Build a two class call SchoolOne and SchoolTwo that display 
+# there list of students average grades and GPA. 
 
 class SchoolOne:
     def __init__(self):
